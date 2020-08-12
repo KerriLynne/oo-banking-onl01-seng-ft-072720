@@ -19,11 +19,7 @@ class BankAccount
   end
 
   def valid?
-    if @status == "open" && @balance > 0 #is valid with an open status and a balance greater than 0
-      true
-    else
-      false
-    end
+    @status == "open" && @balance > 0 #is valid with an open status and a balance greater than 0
   end
 
   def close_account
@@ -32,7 +28,7 @@ class BankAccount
 
   def self.all
     @@all
-  end  
+  end
 
 
 end
